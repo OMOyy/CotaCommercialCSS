@@ -1,0 +1,312 @@
+/*#tabsF {
+    float:left;
+    width:100%;
+    background:#efefef;
+    font-size:93%;
+    line-height:normal;
+    border-bottom:1px solid #666;}
+#tabsF ul {
+    margin:0;
+    padding:10px 10px 0 50px;
+    list-style:none;}
+#tabsF li {
+    display:inline;
+    margin:0;
+    padding:0;}
+#tabsF a {
+    float:left;
+    background:url("img/tableftF.gif") no-repeat left top;
+    margin:0;
+    padding:0 0 0 4px;
+    text-decoration:none;}
+#tabsF a span {
+    float:left;
+    display:block;
+    background:url("img/tabrightF.gif") no-repeat right top;
+    padding:5px 15px 4px 6px;
+    color:#666;}
+#tabsF a span {
+    float:none;}
+#tabsF a:hover span {
+    color:#FFF;}
+#tabsF a:hover {
+    background-position:0% -42px;}
+#tabsF a:hover span {
+    background-position:100% -42px;}
+#tabsF #current a   {
+    background-position:0% -42px;}
+#tabsF #current a span {  
+    background-position:100% -42px;}*/
+
+    /*固定siderbar用的*/
+.sticky {
+    position: sticky;
+    z-index: 99;
+}
+.topSticky1 {
+    top: 0px;
+}
+.topSticky2 {
+    top: 50px;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/*底色背景*/
+.background{
+    /*background-image: url("img/background.png");*/
+    background-color: #ffffff;
+}
+/*上排標題和瀏覽列*/
+#Header h1{
+    color: #063850;
+    -webkit-text-stroke: 0.5px #063850;
+    
+    font-size: 32px;
+    letter-spacing: 0.75em;
+    margin: 0px;
+    padding: 60px 150px;
+}
+.container-fluid {
+    width: 100%;
+    height: 202px;
+    background-position: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    color: #063850;
+    font-family: "微軟正黑體";
+}
+/*單位姓名*/
+.namecard{
+    position: absolute;
+    right: 50px;
+    top:20px;
+    background-color: #fff;
+    border-radius: 15px;
+    opacity:0.9;
+    list-style: none;
+}
+.nameLEFT{
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px ;
+}
+/*瀏覽列樣式*/
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    list-style: none;
+    margin: -4px 0px;
+    
+
+}
+.nav-item{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 0px;
+    -ms-flex-positive: 1;
+    flex-grow: 0.5;
+    text-align: center;
+    border-radius: 10px 0px 0px 0px ;
+    margin: -3px;
+    border: 1px solid #dee2e6;
+    border-bottom:5px solid #D0E7E9;/* #a5c7d0*/
+    box-shadow: -1px 0px 0px 0 rgb(0 0 0 / 20%);
+    
+}
+.snail{
+    /*隱藏在active的小蝸牛˙*/   
+    background:url("img/snails.png") no-repeat  ;
+    height: 25px;
+    /* width: 40px; */
+    margin-bottom: -31px;
+    margin-top: 8px;
+}
+.nav-item:hover{/*樣式顏色待設計*/
+    background-color: #FEFBE8 ;
+    
+}
+
+.active {
+        border-color: #dee2e6 #dee2e6 #a5c7d0;
+        background-color: #E5F3F6;
+
+}
+.active>a {
+    -webkit-text-stroke: 0.5px#063850;
+    color:  #063850 !important;
+}
+.nav-item>a{
+    color: #063850;
+    font-family: "微軟正黑體";
+    text-decoration: none;   
+}
+
+.row {
+    display: flex;/*同行排列*/
+    /*align-items: center;/*水平置中*/
+    /*flex-wrap: wrap;*/
+    /*margin-right: -15px; */
+    /*margin-left: -15px; */
+}
+/*側邊攔*/
+.siderbar {/*樣式顏色待設計*/
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 15%;
+    position: relative;
+    width: 100%;
+    /*padding-top: 50px;*/
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #063850;
+    font-family: "微軟正黑體";  
+    background-color: #fffce9;
+    letter-spacing: 0.15em;
+}
+.siderbarPNG{
+    background-image: url('img/siderbar.png') ;
+    height: 50px;
+    margin-top: 0px;
+}
+.siderbar .active {
+    background-color: #063850;
+    color: #ffffff !important;
+    -webkit-text-stroke: 0.1px#ffffff;
+}
+.siderbar-item:hover{
+    background-color: #a5c7d0;
+}
+.siderbar>.siderbar-group>a{
+    color: #063850;
+    font-family: "微軟正黑體";
+    text-decoration: none;
+}
+.siderbar-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0px;
+
+}
+.siderbar-item {
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+/*主要內容區塊*/
+.mainContainer {
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #ffffff;
+}
+.container{
+    width: 100%;
+    margin: 50px auto 20px auto;
+    max-width: 800px;
+}
+/*表格樣式*/
+table td, table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+}
+thead{
+    background-color:#D0E7E9 ;
+    
+    width: 100%;
+}
+tfoot{
+    background-color:#a5c7d0 ;
+   
+    width: 100%;
+}
+thead td, thead th {
+    border: 1px solid #ffffff;
+}
+tbody{
+    background-color:#ffffff;
+}
+/*第一表格樣式(會有第二)*/
+.tableone{
+    border: 1px solid #dee2e6;
+    color:#063850;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+/*按鈕*/
+button{/*樣式顏色待設計*/
+    border: none; 
+    padding:5px 40px;
+    border-radius: 15px;
+    /*background: #fffce9;*/
+    color: #063850;
+    font-weight:bold;
+    background-color: #E5F3F6;
+    box-shadow: 0px 0px 0px 0 rgb(0 0 0 / 20%), 1px 2px 1px 0 rgb(116 125 136 / 50%), inset 1px 1px 2px 0 rgb(255 255 255/ 60%);
+    /*border: 1px solid #dee2e6;*/
+}
+button:hover{
+    margin-top: -1px;
+    margin-left: -1px;
+    background: #fffce9;
+}
+button:focus-within{
+    box-shadow: 1px 1px 0px 0 rgb(255 255 255 / 20%), -1px -1px 0px 0 rgb(116 125 136 / 50%), inset 2px 2px 6px 0 rgb(0 0 0 / 20%);
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.back{   
+    background:url("img/back.png") no-repeat  ;
+    height: 42px;
+     width: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.backToHome{/*樣式顏色待設計*/
+    text-align: right!important;
+    margin-top: 50px;
+    padding: 10px;
+}
+.table_blue{
+    background-color: #E5F3F6;
+}
+.table_yellow{
+    background-color: #fffce9;
+}
+/*  藍色
+    #E5F3F6 淺色背景
+    #D0E7E9 微淺色底線
+    #a5c7d0 深色按鈕
+    #063850 深色
+    黃色
+    #FEFBE8 淺黃色
+    #fffce9 不同淺黃色 (比較好看適合當底)
+    #ffedaf 明黃色
+    #fdeead 深黃色
+    */

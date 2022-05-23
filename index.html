@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>2022</title>
+	  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="background">
+
+	<!--Header------------------------------------------------------------------------------------------------------>
+	<div id="Header"class="container-fluid">
+		<div class="row">
+			<!--標題-->
+			<h1>
+				跨行連線作業
+			</h1>
+			<!--姓名單位-->
+			<ul class="namecard">
+				<li class="nameLEFT">單位:___________</li>
+				<li class=" nameLEFT">姓名:___________</li>
+			</ul>
+		</div>
+		
+		<!--選單--->
+		<div id="navBar">
+			<ul class="navbar"> 
+				<!--<li class="snail"></li>-->
+				<li class="nav-item " id="current"><a class=""><span>通匯</span></a></li> 
+				<li class="nav-item"><a href="#"><span>結帳與清算</span></a></li> 
+				<li class="nav-item"><a href="#"><span>OPC</span></a></li> 
+				<li class="nav-item active"><p class="snail"></p><a href="#"><span>NCCC</span></a></li> 
+				<li class="nav-item "><a href="#"><span>ATM結帳</span></a></li> 
+				<li class="nav-item"><a href="#"><span>資訊部專區</span></a></li> 
+				<li class="nav-item"><a href="#"><span>操作組專區</span></a></li> 
+				<li class="nav-item"><a href="#"><span>數金部專區</span></a></li> 
+				<li class="nav-item"><a href="#"><span>登出</span></a></li> </ul>
+		</div>
+	</div>
+	<!--側邊攔------------------------------------------------------------------------------------------------------->
+		<div class="row">
+			<div class="siderbar "> 
+				<div class="siderbarPNG sticky topSticky1"></div>
+				<div class="siderbar-group sticky topSticky2">
+					<a href="#" class="siderbar-item active">通匯查詢</a>
+					<a href="#" class="siderbar-item">通匯統計資料</a>
+					<a href="#" class="siderbar-item ">手續費認證</a>
+					<a href="#" class="siderbar-item">手續費變更紀錄</a>
+					<a href="#" class="siderbar-item">查詢匯出交易</a>
+					<a href="#" class="siderbar-item">通匯及電文序號變更</a>
+					<a href="#" class="siderbar-item">共用中心更改</a>
+					<a href="#" class="siderbar-item">交換基碼-本行</a>
+					<a href="#" class="siderbar-item">交換基碼-他行</a>
+					<a href="#" class="siderbar-item">程式狀態重設</a>
+					<a href="#" class="siderbar-item">匯入款自動入分行</a>
+					<a href="#" class="siderbar-item">匯入款手動入分行</a>
+					<a href="#" class="siderbar-item">RM06跨行訊息查詢</a>
+					<a href="#" class="siderbar-item">備援狀態切換</a>
+					<a href="#" class="siderbar-item">備援匯款資料</a>
+					<a href="#" class="siderbar-item">備援委託檔下載</a>
+					<a href="#" class="siderbar-item">備援作業紀錄</a>
+				</div>
+			</div>
+			<!--主要內容區塊----------------------------------------------------------------------------------------------->
+			<div class="mainContainer">
+				<h1>1.	通匯查詢</h1>
+				<div class="container">
+					<table class="tableone " >
+						<!--表格總寬度設定在table上-->
+						<colgroup>
+						  <!--使用col作欄位寬度設定-->
+						  <col style="width:;">
+						  <!--可根據% or 標題字數(包含符號)設定-->
+						  <col style="width:*;">
+						  <!--無設定時寬度根據內容長度-->
+						</colgroup>
+						<thead>
+						  <tr>
+							<th></th>
+							<th>輸入查詢條件</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>資料型態</td>
+							<td><select class="" id="select">
+								<option>匯入</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select></td>
+						  </tr>
+						  <tr>
+							<td><select class="" id="select">
+								<option>交易日期</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select></td>
+							<td><input type="date"></td>
+						  </tr>
+						  <tr>
+							<td>時間</td>
+							<td><input type="time"><a>~</a>
+								<input type="time">
+							</td>
+						  </tr>
+						  <tr>
+							<td>帳號</td>
+							<td><input type="text">
+							</td>
+						  </tr>
+						  <tr>
+							<td>金額</td>
+							<td><select class="" id="select">
+								<option></option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select><input type="text">
+							</td>
+						  </tr>
+						  <tr>
+							<td>電文序號</td>
+							<td><input type="text">
+							</td>
+						  </tr>
+						  <tr>
+							<td>電文序號</td>
+							<td><input type="text"><a>-</a><input type="text">
+							</td>
+						  </tr>
+						  <tr>
+							<td>解款行</td>
+							<td><select class="" id="select">
+								<option>不選擇</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</td>
+						  </tr>
+						  <tr>
+							<td>收款人</td>
+							<td><input type="text"><a>-</a><input type="text">
+							</td>
+						  </tr>
+						  <tr>
+							<td>匯款人</td>
+							<td><input type="text"><a>-</a><input type="text">
+							</td>
+						  </tr>
+						  <tr>
+							<td>處理狀況</td>
+							<td><select class="" id="select">
+								<option>不選擇</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</td>
+						  </tr>
+						  <tr>
+							<td>跨行/聯行</td>
+							<td><select class="" id="select">
+								<option>全部</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</td>
+						  </tr>
+						</tbody>
+						<tfoot>
+							<tr class="">
+							  <th></th>
+							  <th style=" text-align: right!important;"><button>查詢</button></th>
+							</tr>
+						  </thead>
+						</tfoot>
+				</div>
+				<div class="container">
+					<table class="tableone " >
+						<thead>
+							<tr>
+							  <th>交易日期</th>
+							  <th>交易時間</th>
+							  <th>入分行日期</th>
+							  <th>帳號</th>
+							  <th>金額</th>
+							  <th>匯出行</th>
+							  <th>解款行</th>
+							  <th>收款人</th>
+							  <th>處理狀態</th>
+							  <th>動作</th>
+							</tr>
+							<tr>
+								<th colspan="10"></th>
+							</tr>
+						</thead>
+					</table>
+					<div class="backToHome">
+						<button ><svg class="back"></svg><a>回查詢頁面</a></button>
+					</div>	
+				</div>
+				<h1>2.	通匯總計資料</h1>
+				<div class="container">
+					<span>類型</span>&nbsp;&nbsp;<select><option>匯入</option></select>&nbsp;&nbsp;&nbsp;
+					<span>跨行/聯行</span>&nbsp;&nbsp;<select><option>跨行</option></select>&nbsp;&nbsp;&nbsp;&nbsp;<select><option>交易日期</option>&nbsp;</select><a>:</a><input type="date"></input>&nbsp;&nbsp;
+					<label>FXML</label>&nbsp;&nbsp;&nbsp;<button>查詢</button>
+
+					<table class="tableone">
+						<thead>
+							<tr>
+								<th>分行代碼</th>
+								<th>分行名稱</th>
+								<th>未處理筆數</th>
+								<th>成功筆數</th>
+								<th>自動退匯</th>
+								<th>人工解款</th>
+								<th>交易金額</th>
+							</tr>
+						</thead>
+						<tbody id="tbody">
+						</tbody>
+						<!--利用JS寫表格-->
+						<script type="text/javascript">
+							
+							var tbody = document.getElementById("tbody");
+							for (var i=0;i<42;i++){
+								var tr = document.createElement("tr");
+								for (var j=0; j<7 ;j++){
+									var td = document.createElement("td");									
+									if (j==0){
+										var c=i+1;
+										console.log(c);/*檢查*/
+										td.innerText = c.toString();
+									}
+									else if (j==1){
+										td.innerText = "data[i]";
+									}
+									else{
+										td.innerText = "0";
+									}
+									tr.appendChild(td);
+								}
+								/*偶數行藍色 奇數行黃色*/
+								if(i% 2 == 0){
+									tr.classList.add("table_blue");
+									}
+								else{
+									tr.classList.add("table_yellow");
+									}
+								tbody.appendChild(tr);
+							}
+						</script>
+					</table>
+				</div>
+				<h1>3.	跨行作業結帳總計資料(p.12)</h1>
+				<div class="container">
+					
+				</div>
+			</div>
+		</div>
+	
+	
+</body>
+</html>

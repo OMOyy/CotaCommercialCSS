@@ -1,0 +1,133 @@
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/loginImg.png");
+    background-size: cover;
+    background-position: center;
+    font-family:'微軟正黑體', 'Rajdhani', sans-serif;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.glass {
+  height: 100%;
+  width: 100%;
+   background-image: url("img/loginImg.png");
+  background-size: cover;
+  background-position: center;
+  clip-path: inset(10em);
+  filter: blur(20px); /*更改玻璃磨砂透明度*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-shadow {
+  height: 90%;
+  width: 60%;
+filter:  drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.drop-shadow:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10em;
+     height: calc(100% - 43em);
+    width: calc(100% - 20em);
+     border-top: 2px solid rgba(255, 255, 255, 0.466);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+     border-right: 1px solid rgba(255, 255, 255, 0.3);
+     z-index: 2;
+     /*filter: blur(1px);*/
+  }
+    
+  .login-container{
+    position: absolute;
+    letter-spacing: 0.75em;
+    color: #063850;
+  }
+  .logInput{
+      border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    color: #063850;
+    display: block;
+    position: absolute;
+    outline: 0;
+  }
+  .input-group{
+    
+    padding-bottom: 3.5rem;
+  }
+  .right{
+    bottom: 0px;
+    right: -171px;
+    position: relative;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 20px;
+    background: #a5c7d0;
+    color: #063850;
+  }
+  .right:hover {
+    box-shadow: 1px 1px 0px 0 rgb(255 255 255 / 20%), -1px -1px 0px 0 rgb(116 125 136 / 50%), inset 2px 2px 6px 0 rgb(0 0 0 / 20%);
+}
+  .group{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+  .log_button{
+    border: none;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(0, 38, 59, 0.151);
+    color: aliceblue;
+    font-size: 1em;
+    font-weight:bold;
+  }
+  .log_button:hover {
+    box-shadow: 1px 1px 0px 0 rgb(255 255 255 / 20%), -1px -1px 0px 0 rgb(116 125 136 / 50%), inset 2px 2px 6px 0 rgb(0 0 0 / 20%);
+}
+
+@media (max-width: 1400px) {
+  .glass {
+     clip-path: inset(5em);
+  }
+    .drop-shadow:before {
+      top: 5em;
+      width: calc(100% - 10em);
+    }
+    .drop-shadow> span {
+      font-size: 4em;
+    }
+@media (max-width: 640px) {
+    .drop-shadow> span {
+      font-size: 2em;
+    }
+}
+}
